@@ -6,6 +6,16 @@
 - No Interrupts 
 - ~~No Stack Handling~~
 
+### Registers
+
+| Name | Size in Bits | Purpose                                   |
+| ---- | ------------ | ----------------------------------------- |
+| A    | 4            | Accumulator and General Purpose Register  |
+| B    | 4            | Auxilary and General Purpose Register     |
+| PC   | 12           | Program Counter                           |
+| SP   | 12           | Stack Pointer                             |
+| Z    | 1            | Zero Flag, (exists by NANDing A Register) | 
+
 ### Instruction Set
 - JMP to Address
 - Move Contents from Register to Register

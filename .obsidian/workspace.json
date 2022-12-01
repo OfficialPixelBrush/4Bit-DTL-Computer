@@ -1,0 +1,141 @@
+{
+  "main": {
+    "id": "4db6e92ac51f0476",
+    "type": "split",
+    "children": [
+      {
+        "id": "b66ea1c4695ef60c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79f2c2a216004275",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "4BitDTLComputerNotes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "16a8f6688c600085",
+    "type": "split",
+    "children": [
+      {
+        "id": "b3aaa683aad23125",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "faa1bd549f61aacb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d3ac76f111a3f2f9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8faf87b20720be5a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "70058cb88a5e03b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d24d81d6e08cebd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e9562005abee2f8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "4BitDTLComputerNotes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8e7e297848872240",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "4BitDTLComputerNotes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fe02fbd905492724",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1ed921f355e8e25e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "4BitDTLComputerNotes.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "79f2c2a216004275",
+  "lastOpenFiles": []
+}
