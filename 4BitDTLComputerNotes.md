@@ -49,18 +49,28 @@ Using NAND Instruction as an Example
 | ------------ | ------- |
 | A Register   | 0101    |
 | B Register   | 1111    |
-| Instruction  | 0000    |
-| CycleCounter | 0000    |
+| Instruction  | xxxx    |
+| CycleCounter | xxxx    | 
 
 **Instruction Step-through**
-| Timing | Operation                                | A Reg |
-| ------ | ---------------------------------------- | ----- |
-| \_/⎺   | Load Address into PC                     | 1010  |
-| ⎺\\\_  | (time to let Address stabilize)          | 1010  |
-| \_/⎺   | Load Nibble into INST Register           | 1010  |
-| ⎺\\\_  | Load Necessary Cycles into Cycle Counter | 1010  |
-| \_/⎺   | Enable Control Line for Instruction      | 1010  |
-| ⎺\\\_  | Execute Instruction                      | 0101  |
+| Timing | Operation                                | A Reg | B Reg | Inst | CyCo |
+| ------ | ---------------------------------------- | ----- | ----- | ---- | ---- |
+| \_/⎺   | Load Address into PC                     | 1010  | 1111  | xxxx | xxxx |
+| ⎺\\\_  | (time to let Address stabilize)          | 1010  | 1111  | xxxx | xxxx |
+| \_/⎺   | Load Nibble into INST Register           | 1010  | 1111  | 0000 | xxxx |
+| ⎺\\\_  | Load Necessary Cycles into Cycle Counter | 1010  | 1111  | 0000 | 0001 |
+| \_/⎺   | Enable Control Line for Instruction      | 1010  | 1111  | 0000 | 0001 |
+| ⎺\\\_  | Execute Instruction                      | 0101  | 1111  | 0000 | 0000 |
+
+**Instruction Step-through (from Cycle Loading)**
+| Timing | Operation                                | A Reg | B Reg | Inst | CyCo |
+| ------ | ---------------------------------------- | ----- | ----- | ---- | ---- |
+| ⎺\\\_  | Load Necessary Cycles into Cycle Counter | 1010  | 1111  | 0000 | 0110 |
+| \_/⎺   | Enable Control Line for Instruction      | 1010  | 1111  | 0000 | 0101 |
+| ⎺\\\_  | Execute Instruction                      | 0101  | 1111  | 0000 | 0100 |
+| \_/⎺   | Load Address into PC                     | 1010  | 1111  | xxxx | 0011 |
+| ⎺\\\_  | (time to let Address stabilize)          | 1010  | 1111  | xxxx | 0010 |
+| \_/⎺   | Load Nibble into INST Register           | 1010  | 1111  | 0000 | 0001 |  
 
 ### Memory Map
 | 0x000 - 0x3FF | 0x400 - 0x7FF | 0x800 - 0xBFF | 0xC00 - 0xFFF |
