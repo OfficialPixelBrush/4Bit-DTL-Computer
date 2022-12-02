@@ -41,6 +41,27 @@
 | 0xE | JMPx | Jump if x Flag Set                                  | ZCP_        | -           | 2                                  |
 | 0xF | JMP  | Unconditional Jump                                  | Addr        | -           | 4                                  | 
 
+### Instruction Cycle
+Using NAND Instruction as an Example
+
+**Register Contents***
+| Reg          | Content |
+| ------------ | ------- |
+| A Register   | 0101    |
+| B Register   | 1111    |
+| Instruction  | 0000    |
+| CycleCounter | 0000    |
+
+**Instruction Step-through**
+| Timing | Operation                                | A Reg |
+| ------ | ---------------------------------------- | ----- |
+| \_/⎺   | Load Address into PC                     | 1010  |
+| ⎺\\\_  | (time to let Address stabilize)          | 1010  |
+| \_/⎺   | Load Nibble into INST Register           | 1010  |
+| ⎺\\\_  | Load Necessary Cycles into Cycle Counter | 1010  |
+| \_/⎺   | Enable Control Line for Instruction      | 1010  |
+| ⎺\\\_  | Execute Instruction                      | 0101  |
+
 ### Memory Map
 | 0x000 - 0x3FF | 0x400 - 0x7FF | 0x800 - 0xBFF | 0xC00 - 0xFFF |
 | ------------- | ------------- | ------------- | ------------- |
