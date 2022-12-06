@@ -19,6 +19,20 @@
 | C    | 1            | Carry Flag (based on last Calculation)   |
 | P    | 1            | Parity Flag (based on A Register)        |
 
+### Microcode
+| Function          |     |
+| ----------------- | --- |
+| Set Reset point   |     |
+| Read Instruction  |     |
+| Set Control Line  |     |
+| Execute Operation |     |
+| Increment PC      |     |
+| Load into PC      |     |
+| Increment SP      |     |
+| Decrement SP      |     |
+| Load into SP      |     |
+|                   |     |
+
 ### Instruction Set
 - JMP to Address
 - Move Contents from Register to Register
