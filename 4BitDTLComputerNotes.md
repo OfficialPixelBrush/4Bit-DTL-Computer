@@ -38,6 +38,7 @@
 - Move Contents from Register to Register
 - Add Contents of A and B
 - AND, OR, NOT Instruction
+- Note: Unconditional Jumping can be done via loading an address into the Program Counter
 
 | Hex | Name | Function                                                       | Parameter 1 | Parameter 2 | Total Instruction Length (Nibbles) | Cyclces |
 | --- | ---- | -------------------------------------------------------------- | ----------- | ----------- | ---------------------------------- | ------- |
@@ -56,7 +57,7 @@
 | 0xC | JSR  | Jump to Subroutine (push pc to stack, jump to defined address) | Addr        | -           | 4                                  |         |
 | 0xD | RET  | Return from Subroutine (pop pointed at by sp into pc)          | -           | -           | 1                                  |         |
 | 0xE | JMPx | Jump if x Flag Set                                             | ZCBP        | -           | 2                                  |         |
-| 0xF | CLRx | Clear Flag x (cannot be used on Z and P Flag)                  | -CB-        | -           | 2                                  |         |
+| 0xF | CLRx | Clear Flag x (cannot be used on Z or P Flag)                  | -CB-        | -           | 2                                  |         |
 
 **Implemented through Parameters**
 | Name    | Function                                           |
@@ -81,7 +82,8 @@
 | JMPC    | Jump if Carry Flag Set                             |
 | JMPB    | Jump if Borrow Flag Set                            |
 | JMPP    | Jump if Parity Flag Set                            |
-
+| CLRC    | Clear the Carry Flag                               |
+| CLRB    | Clear the Borrow Flag                              | 
 ### Instruction Cycle
 Using NAND Instruction as an Example
 
