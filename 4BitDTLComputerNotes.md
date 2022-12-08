@@ -50,14 +50,14 @@
 | 0x5 | SR   | Shift Contents of A Right, Load into A                         | -           | -           | 1                                  |         |
 | 0x6 | LDx  | Load Number into Register defined by Bitmask                   | ABPS        | Num         | 3 - 5                              |         |
 | 0x7 | STx  | Store Register defined by Bitmask to Address                   | ABPS        | Addr        | 5                                  |         |
-| 0x8 | LDAD | Load Contents of Address into A                                | ABPS        | Addr        | 5                                  |         |
+| 0x8 | LDAD | Load Contents of Address into Register defined by Bitmask      | ABPS        | Addr        | 5                                  |         |
 | 0x9 | SWAP | Swap contents of A and B                                       | -           | -           | 1                                  |         |
 | 0xA | PUSH | Push x Register to Stack                                       | ABPS        | -           | 2                                  |         |
 | 0xB | POP  | Pop contents pointed at by SP into x                           | ABPS        | -           | 2                                  |         |
 | 0xC | JSR  | Jump to Subroutine (push pc to stack, jump to defined address) | Addr        | -           | 4                                  |         |
 | 0xD | RET  | Return from Subroutine (pop pointed at by sp into pc)          | -           | -           | 1                                  |         |
 | 0xE | JMPx | Jump if x Flag Set                                             | ZCBP        | -           | 2                                  |         |
-| 0xF | CLRx | Clear Flag x (cannot be used on Z or P Flag)                  | -CB-        | -           | 2                                  |         |
+| 0xF | CLRx | Clear Flag x (cannot be used on Z or P Flag)                   | -CB-        | -           | 2                                  |         |
 
 **Implemented through Parameters**
 | Name    | Function                                           |
