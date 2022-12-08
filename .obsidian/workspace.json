@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "70058cb88a5e03b1",
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware Components.md",
+                "file": "4BitDTLComputerNotes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware Components.md",
+                "file": "4BitDTLComputerNotes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware Components.md"
+                "file": "4BitDTLComputerNotes.md"
               }
             }
           }
@@ -149,8 +149,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "214b717d61ee889c",
+  "active": "79f2c2a216004275",
   "lastOpenFiles": [
+    "Hardware Components.md",
     "4BitDTLComputerNotes.md"
   ]
 }

@@ -39,24 +39,24 @@
 - Add Contents of A and B
 - AND, OR, NOT Instruction
 
-| Hex | Name | Function                                            | Parameter 1 | Parameter 2 | Total Instruction Length (Nibbles) | Cyclces | 
-| --- | ---- | --------------------------------------------------- | ----------- | ----------- | ---------------------------------- | ------- |
-| 0x0 | NAND | Bitwise NAND A and B, Load into A                   | -           | -           | 1                                  |         |
-| 0x1 | NOR  | Bitwise NOR A and B, Load into A                    | -           | -           | 1                                  |         |
-| 0x2 | NOT  | Invert Contents of A, Load into A                   | -           | -           | 1                                  |         |
-| 0x3 | ADD  | Add the Contents of A and B with Carry, Load into A | -           | -           | 1                                  |         |
-| 0x4 | SL   | Shift Contents of A Left, Load into A               | -           | -           | 1                                  |         |
-| 0x5 | SR   | Shift Contents of A Right, Load into A              | -           | -           | 1                                  |         |
-| 0x6 | LDx  | Load Number into Register defined by Bitmask        | ABPS        | Num         | 3                                  |         |
-| 0x7 | STx  | Store Register defined by Bitmask to Address        | ABPS        | Addr        | 5                                  |         |
-| 0x8 | LDAD | Load Contents of Address into A                     | ABPS        | Addr        | 5                                  |         |
-| 0x9 | SWAP | Swap contents of A and B                            | -           | -           | 1                                  |         |
-| 0xA | PUSH | Push x Register to Stack                            | ABPS        | -           | 2                                  |         |
-| 0xB | POP  | Pop contents pointed at by SP into x                | ABPS        | -           | 2                                  |         |
-| 0xC | JSR  | Jump to Subroutine                                  | Addr        | -           | 4                                  |         |
-| 0xD | RET  | Return from Subroutine                              | -           | -           | 1                                  |         |
-| 0xE | JMPx | Jump if x Flag Set                                  | ZCBP        | -           | 2                                  |         |
-| 0xF | JMP  | Unconditional Jump                                  | Addr        | -           | 4                                  |         |
+| Hex | Name | Function                                                       | Parameter 1 | Parameter 2 | Total Instruction Length (Nibbles) | Cyclces |
+| --- | ---- | -------------------------------------------------------------- | ----------- | ----------- | ---------------------------------- | ------- |
+| 0x0 | NAND | Bitwise NAND A and B, Load into A                              | -           | -           | 1                                  |         |
+| 0x1 | NOR  | Bitwise NOR A and B, Load into A                               | -           | -           | 1                                  |         |
+| 0x2 | NOT  | Invert Contents of A, Load into A                              | -           | -           | 1                                  |         |
+| 0x3 | ADD  | Add the Contents of A and B with Carry, Load into A            | -           | -           | 1                                  |         |
+| 0x4 | SL   | Shift Contents of A Left, Load into A                          | -           | -           | 1                                  |         |
+| 0x5 | SR   | Shift Contents of A Right, Load into A                         | -           | -           | 1                                  |         |
+| 0x6 | LDx  | Load Number into Register defined by Bitmask                   | ABPS        | Num         | 3 - 5                              |         |
+| 0x7 | STx  | Store Register defined by Bitmask to Address                   | ABPS        | Addr        | 5                                  |         |
+| 0x8 | LDAD | Load Contents of Address into A                                | ABPS        | Addr        | 5                                  |         |
+| 0x9 | SWAP | Swap contents of A and B                                       | -           | -           | 1                                  |         |
+| 0xA | PUSH | Push x Register to Stack                                       | ABPS        | -           | 2                                  |         |
+| 0xB | POP  | Pop contents pointed at by SP into x                           | ABPS        | -           | 2                                  |         |
+| 0xC | JSR  | Jump to Subroutine (push pc to stack, jump to defined address) | Addr        | -           | 4                                  |         |
+| 0xD | RET  | Return from Subroutine (pop pointed at by sp into pc)          | -           | -           | 1                                  |         |
+| 0xE | JMPx | Jump if x Flag Set                                             | ZCBP        | -           | 2                                  |         |
+| 0xF | CLRx | Clear Flag x (cannot be used on Z and P Flag)                  | -CB-        | -           | 2                                  |         |
 
 **Implemented through Parameters**
 | Name    | Function                                           |
