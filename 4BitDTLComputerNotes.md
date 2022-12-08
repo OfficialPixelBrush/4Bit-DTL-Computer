@@ -65,31 +65,6 @@ n, Nibble
 | 0xE | JMP f,a | Jump if x Flag Set                                               | ZCBP        | Addr        | 5                                  |         |
 | 0xF | CLR f   | Clear Flag x (cannot be used on Z or P Flag)                     | -CB-        | -           | 2                                  |         |
 
-**Implemented through Parameters**
-| Name    | Function                                           |
-| ------- | -------------------------------------------------- |
-| LDA     | Load Number into A Register                        |
-| LDB     | Load Number into B Register                        |
-| LDPC    | Load Number into Program Counter                   |
-| LDSP    | Load Number into Stack Pointer                     |
-| STA     | Store Contents of A Register to Address            |
-| STB     | Store Contents of B Register to Address            |
-| STPC    | Store Contents of Program Counter to Address       |
-| STSP    | Store Contents of Stack Pointer to Address         |
-| PUSH A  | Push A Register to Stack                           |
-| PUSH B  | Push B Register to Stack                           |
-| PUSH PC | Push Program Counter to Stack                      |
-| PUSH SP | Push Stack Pointer to Stack                        |
-| POP A   | Pop contents pointed at by SP into A Register      |
-| POP B   | Pop contents pointed at by SP into B Register      |
-| POP PC  | Pop contents pointed at by SP into Program Counter |
-| POP SP  | Pop contents pointed at by SP into Stack Pointer   |
-| JMPZ    | Jump if Zero Flag Set                              |
-| JMPC    | Jump if Carry Flag Set                             |
-| JMPB    | Jump if Borrow Flag Set                            |
-| JMPP    | Jump if Parity Flag Set                            |
-| CLRC    | Clear the Carry Flag                               |
-| CLRB    | Clear the Borrow Flag                              | 
 ### Instruction Cycle
 Using NAND Instruction as an Example
 
