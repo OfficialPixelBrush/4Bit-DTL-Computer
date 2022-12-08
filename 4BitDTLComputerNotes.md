@@ -56,7 +56,7 @@
 | 0xB | POP  | Pop contents pointed at by SP into (Register defined by Bitmask) | ABPS        | -           | 2                                  |         |
 | 0xC | JSR  | Jump to Subroutine (push pc to stack, jump to parameter address) | Addr        | -           | 4                                  |         |
 | 0xD | RET  | Return from Subroutine (pop pointed at by sp into pc)            | -           | -           | 1                                  |         |
-| 0xE | JMPx | Jump if x Flag Set                                               | ZCBP        | -           | 2                                  |         |
+| 0xE | JMPx | Jump if x Flag Set                                               | ZCBP        | Addr        | 5                                  |         |
 | 0xF | CLRx | Clear Flag x (cannot be used on Z or P Flag)                     | -CB-        | -           | 2                                  |         |
 
 **Implemented through Parameters**
