@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "4BitDTLComputerNotes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "4BitDTLComputerNotes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "4BitDTLComputerNotes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "4BitDTLComputerNotes.md"
               }
             }
           }
@@ -137,8 +137,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "79f2c2a216004275",
+  "active": "faa1bd549f61aacb",
   "lastOpenFiles": [
+    "README.md",
     "4BitDTLComputerNotes.md",
     "Code Example.md",
     "Hardware Components.md"
