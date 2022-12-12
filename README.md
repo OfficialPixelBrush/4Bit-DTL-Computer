@@ -5,7 +5,11 @@ The main purpose of this Computer is to make a decently compact, decently fast a
 
 The Instruction Set was designed with a CISC Mindset,  ~~partly out of spite for RISC architectures~~ partly due to not having much experience with RISC architectures, but mainly due to Memory Limitations imposed by only having a 12-Bit Address Bus, and utilizing Core Memory, as opposed to using DRAM or similar technologies, as those wouldn't be invented until the late 60s, and not become widespread until the early 70s.
 
+I am aware that technologies like Williams tubes, delay-line memory and SRAM did exist back then, but these will be avoided for a number of logistical, monetary or just practicality reasons I won't elaborate on in this section.
+
 # Components
+This section will describe the various Modules and Boards of this Computer. 
+
 ## PBP-1204
 **P**ixel **B**rush **P**rocessor, **12**-Bit Addressable Memory, **4**-Bit Data Processing
 The PBP-1204 will be responsible for most of the heavy lifting with it's 16 variable-width Instructions, capable of addressing a whopping 4096 Nibbles of Data via it's 12-Bit Address Bus and 4-Bit Data Bus.
@@ -14,6 +18,12 @@ While it lacks Interrupts, it will likely be capable of stack operations, like p
 ## PBCM-1604N
 **P**ixel **B**rush **C**ore **M**emory, **16**x**16** Core Grid, **4** Layers Tall, Nibbles
 The PBCM-1604 will provide the Computer with a total of 1 Kilonibbles per Module.
+
+# What this Project won't be
+### This thing will be slow and inefficient
+This Computer absolutely won't be the fastest, and while I could absolutely opt to use MOSFETs and save myself a bunch of Resistors and Diodes to make this work, I've decided to stick to true Diode-Transistor Logic, meaning I've been using good ol' Bipolar Junction Transistors for my work, and will likely continue doing so in the near future.
+
+To add onto this, I'm just one dude that knows a little bit of Z80 Assembly. My instruction set is far from perfect, but it's just supposed to be easy to understand and decently easy to implement.
 
 # Future Plans
 Well, hopefully I'll get to build the thing someday! Right now the Processor is taking center stage, this involves refining, tweaking, overhauling the instruction set, for instance. Right now it's slowly moving towards actually designing the actual hardware needed to make this thing work as intended, which is easier said than done, especially when you lack any and all experience in designing an ungodly fusion of CISC and RISC, while only having a vague understanding of the Fetch, Decode, Execute Cycle.
