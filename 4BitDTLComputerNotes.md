@@ -60,7 +60,7 @@ n, Nibble
 | 0x9 | SWP     | Swap contents of A and B                                         | -           | -           | 1                                  |         |
 | 0xA | PSH r   | Push (Register defined by Bitmask) to Stack                      | ABPS        | -           | 2                                  |         |
 | 0xB | POP r   | Pop contents pointed at by SP into (Register defined by Bitmask) | ABPS        | -           | 2                                  |         |
-| 0xC | JSR f,a | Jump to Subroutine (push pc to stack, jump to parameter address) | ZCBP        | Addr-       | 5                                  |         |
+| 0xC | JSR f,a | Jump to Subroutine (push pc to stack, jump to parameter address) | ZCBP        | Addr        | 5                                  |         |
 | 0xD | RET     | Return from Subroutine (pop pointed at by sp into pc)            | -           | -           | 1                                  |         |
 | 0xE | JMP f,a | Jump if x Flag Set                                               | ZCBP        | Addr        | 5                                  |         |
 | 0xF | CLR f   | Clear Flag x (cannot be used on Z or P Flag)                     | -CB-        | -           | 2                                  |         |

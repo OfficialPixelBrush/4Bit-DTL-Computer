@@ -66,17 +66,10 @@
 	
 }
 
-LD A,0     ; zero A Reg
-
-loop:     ; calculation loop
-LD B,1     ; Set B to 1
-ADD       ; 1 in A Reg, 1 in B Reg
-SWP      ; swap contents of A and B
-LD A,15    ; 15 in A Reg, 1 in B Reg
-NAND      ; 0001 in A Reg, 1 in B Reg
-JMP Z,exit ; jump to exit if A = 0 (not true unless A and B == 15)
-SWP      ; swap contents of A and B
-LD PC,loop ; load address to loop into PC
-
-exit:     ; end loop
-LD PC,exit ; load address to exit into PC
+; Fibo Sequence in 4 Bit
+LD A,0		; zero A Reg
+LD B,1		; 1 to B
+loop:		
+ADD			; add A and B together
+SWP		; swap the contents of A and B
+JMP B,loop	; jump back to loop if borrow flag is set
