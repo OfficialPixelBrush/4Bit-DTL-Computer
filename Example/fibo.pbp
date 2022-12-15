@@ -67,9 +67,12 @@
 }
 
 ; Fibo Sequence in 4 Bit
+reset:
+CLR C
 LD A,0		; zero A Reg
 LD B,1		; 1 to B
 loop:		
 ADD			; add A and B together
 SWP		; swap the contents of A and B
-JMP B,loop	; jump back to loop if borrow flag is set
+JMP C,reset
+LD PC,loop	; jump back to loop if borrow flag is set
