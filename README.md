@@ -9,15 +9,30 @@ I am aware that technologies like Williams tubes, delay-line memory and SRAM did
 
 # Components
 This section will describe the various Modules and Boards of this Computer. 
+More information on said Hardware can be found under [Hardware Components](Hardware%20Components.md).
 
 ## PBP-1204
 **P**ixel **B**rush **P**rocessor, **12**-Bit Addressable Memory, **4**-Bit Data Processing
 The PBP-1204 will be responsible for most of the heavy lifting with it's 16 variable-width Instructions, capable of addressing a whopping 4096 Nibbles of Data via it's 12-Bit Address Bus and 4-Bit Data Bus.
 While it lacks Interrupts, it will likely be capable of stack operations, like pushing and popping data.
 
+More info on the PBP's Instruction Set and features can be found in [PBP-1204](PBP1204/PBP1204.md)
+
 ## PBCM-1604N
 **P**ixel **B**rush **C**ore **M**emory, **16**x**16** Core Grid, **4** Layers Tall, Nibbles
 The PBCM-1604 will provide the Computer with a total of 1 Kilonibbles per Module.
+
+# Example Software
+Example Code and Programs can be found in the Example Subdirectory. 
+I try to keep the code as well-commented and understandable as possible, so even a novice Programmer can read and write PBP-1204 Assembly Code.
+
+Some of the Programs include:
+
+### Counting Program
+A simple Program that counts from 0 to 15, then enters an infinite loop, [found here](Example/count.pbp)
+
+### Fibonacci Sequence
+A simple Program that calculates the Fibonacci Sequence in 4 Bits, [found here](Example/fibo.pbp)
 
 # What this Project won't be
 ### This thing will be slow and inefficient
