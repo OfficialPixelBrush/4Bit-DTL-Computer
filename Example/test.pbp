@@ -24,35 +24,30 @@
 	add => 0x3
 	sl =>  0x4
 	sr => 0x5
-	
 	ld {r: register}, {value} =>
     {
         assert(r >= 0b0100)
         assert(r <= 0b1000)
         0x6 @ r @ value `4
     }
-	
 	ld {r: register}, {value} =>
     {
         assert(r >= 0b0001)
         assert(r <= 0b0010)
         0x6 @ r @ value `12
     }
-		
 	st {r: register}, {value} =>
     {
         assert(r >= 0b0100)
         assert(r <= 0b1000)
         0x7 @ r @ value `4
     }
-	
 	st {r: register}, {value} =>
     {
         assert(r >= 0b0001)
         assert(r <= 0b0010)
         0x7 @ r @ value `12
     }
-	
 	ldd {value : u12}, {r: register}  => 0x8 @ r @ value`12
 	
 	swp => 0x9
@@ -66,13 +61,10 @@
 	
 }
 
-; Fibo Sequence in 4 Bit
-reset:
-CLR C
-LD A,0		; zero A Reg
-LD B,1		; 1 to B
-loop:		
-ADD			; add A and B together
-SWP		; swap the contents of A and B
-JMP C,reset ; potentially add Conditional Loading for some things?
-LD PC,loop	; jump back to loop if borrow flag is set
+NAND
+NOR
+NOT
+ADD
+SL
+SR
+LD A,0
