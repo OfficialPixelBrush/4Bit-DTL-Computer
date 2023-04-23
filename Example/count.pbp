@@ -22,38 +22,38 @@
     nor => 0x1
 	not => 0x2
 	add => 0x3
-	sl =>  0x4
+	sl => 0x4
 	sr => 0x5
 	
-	ld {r: register}, {value} =>
+	ld {r: register},{value} =>
     {
         assert(r >= 0b0100)
         assert(r <= 0b1000)
         0x6 @ r @ value `4
     }
 	
-	ld {r: register}, {value} =>
+	ld {r: register},{value} =>
     {
         assert(r >= 0b0001)
         assert(r <= 0b0010)
         0x6 @ r @ value `12
     }
 		
-	st {r: register}, {value} =>
+	st {r: register},{value} =>
     {
         assert(r >= 0b0100)
         assert(r <= 0b1000)
         0x7 @ r @ value `4
     }
 	
-	st {r: register}, {value} =>
+	st {r: register},{value} =>
     {
         assert(r >= 0b0001)
         assert(r <= 0b0010)
         0x7 @ r @ value `12
     }
 	
-	ldd {value : u12}, {r: register}  => 0x8 @ r @ value`12
+	ldd {value : u12},{r: register}  => 0x8 @ r @ value`12
 	
 	swp => 0x9
 	
@@ -71,11 +71,11 @@ LD A,0     ; zero A Reg
 loop:     ; calculation loop
 LD B,1     ; Set B to 1
 ADD       ; 1 in A Reg, 1 in B Reg
-SWP      ; swap contents of A and B
-LD A,15    ; 15 in A Reg, 1 in B Reg
-NAND      ; 0001 in A Reg, 1 in B Reg
-JMP Z,exit ; jump to exit if A = 0 (not true unless A and B == 15)
-SWP      ; swap contents of A and B
+;SWP      ; swap contents of A and B
+;LD A,15    ; 15 in A Reg, 1 in B Reg
+;NAND      ; 0001 in A Reg, 1 in B Reg
+;JMP Z,exit ; jump to exit if A = 0 (not true unless A and B == 15)
+;SWP      ; swap contents of A and B
 LD PC,loop ; load address to loop into PC
 
 exit:     ; end loop

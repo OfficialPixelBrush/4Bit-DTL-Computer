@@ -22,38 +22,38 @@
     nor => 0x1
 	not => 0x2
 	add => 0x3
-	sl =>  0x4
+	sl => 0x4
 	sr => 0x5
 	
-	ld {r: register}, {value} =>
+	ld {r: register},{value} =>
     {
         assert(r >= 0b0100)
         assert(r <= 0b1000)
         0x6 @ r @ value `4
     }
 	
-	ld {r: register}, {value} =>
+	ld {r: register},{value} =>
     {
         assert(r >= 0b0001)
         assert(r <= 0b0010)
         0x6 @ r @ value `12
     }
 		
-	st {r: register}, {value} =>
+	st {r: register},{value} =>
     {
         assert(r >= 0b0100)
         assert(r <= 0b1000)
         0x7 @ r @ value `4
     }
 	
-	st {r: register}, {value} =>
+	st {r: register},{value} =>
     {
         assert(r >= 0b0001)
         assert(r <= 0b0010)
         0x7 @ r @ value `12
     }
 	
-	ldd {value : u12}, {r: register}  => 0x8 @ r @ value`12
+	ldd {value : u12},{r: register}  => 0x8 @ r @ value`12
 	
 	swp => 0x9
 	
@@ -61,7 +61,7 @@
 	pop {r: register}  => 0xb @ r
 	jsr {addr : u12}  => 0xc @ addr`12
 	ret => 0xd
-	jmp {f: flag}, {addr: u12} => 0xe @ f @ addr`12
+	jmp {f: flag},{addr: u12} => 0xe @ f @ addr`12
 	clr {f: flag} => 0xf @ f
 	
 }
