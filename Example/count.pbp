@@ -11,8 +11,8 @@
 #ruledef flag
 {
     z => 0b1000
-    c => 0b0100
-    b => 0b0010
+    b => 0b0100
+    c => 0b0010
 	p => 0b0001
 }
 
@@ -67,16 +67,18 @@
 }
 
 LD A,0     ; zero A Reg
+LD B,1     ; Set B to 1
 
 loop:     ; calculation loop
-LD B,1     ; Set B to 1
 ADD       ; 1 in A Reg, 1 in B Reg
 ;SWP      ; swap contents of A and B
 ;LD A,15    ; 15 in A Reg, 1 in B Reg
 ;NAND      ; 0001 in A Reg, 1 in B Reg
-;JMP Z,exit ; jump to exit if A = 0 (not true unless A and B == 15)
+JMP Z,exit ; jump to exit if A = 0 (not true unless A and B == 15)
 ;SWP      ; swap contents of A and B
 LD PC,loop ; load address to loop into PC
 
 exit:     ; end loop
+SWP
+CLR C
 LD PC,exit ; load address to exit into PC

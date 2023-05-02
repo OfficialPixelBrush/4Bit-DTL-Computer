@@ -11,8 +11,8 @@
 #ruledef flag
 {
     z => 0b1000
-    c => 0b0100
-    b => 0b0010
+    b => 0b0100
+    c => 0b0010
 	p => 0b0001
 }
 
@@ -61,7 +61,7 @@
 	pop {r: register}  => 0xb @ r
 	jsr {addr : u12}  => 0xc @ addr`12
 	ret => 0xd
-	jmp {f: flag},{addr: u12} => 0xe @ f @ addr`12
+	jmp {f: flag}, {addr: u12} => 0xe @ f @ addr`12
 	clr {f: flag} => 0xf @ f
 	
 }
