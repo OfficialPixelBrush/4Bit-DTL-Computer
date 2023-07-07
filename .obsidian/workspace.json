@@ -1,0 +1,174 @@
+{
+  "main": {
+    "id": "0486fefde71004e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "e19760d08b2e813f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8bbdc54d2e885a6a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PBP1204/PBP1204.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "3684b40e204410c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9670baf8ce5471f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PBP1204/Breakdown.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb8f4e5807da8583",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9d6afd54bafc8ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b0c81b4a9efd081",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "610408f4d1371e88",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d54d7f5852ffeb45",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "447771316488b20a",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5b7e8d1f1560ca8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "16b0fa15000f77ce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "PBP1204/Breakdown.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a81d17138aa6ed2b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "PBP1204/Breakdown.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2a67b044887924da",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "41956f13d48c027a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "PBP1204/Breakdown.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5b0c81b4a9efd081",
+  "lastOpenFiles": [
+    "Logisim/Decoding.circ",
+    "PBP1204/PBP1204.md",
+    "PBP1204/Breakdown.md"
+  ]
+}
