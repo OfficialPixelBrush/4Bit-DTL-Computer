@@ -29,7 +29,7 @@ Instructions that need:
 | Execute | A and B's NAND goes through                         |
 | Store   | Update A                                            |
 
-- Find corelation between cycle and instruction.
+- Find correlation between cycle and instruction.
 - Cycle + Inst = ADDRESS for Control Lines
   
 Control Lines go to:
