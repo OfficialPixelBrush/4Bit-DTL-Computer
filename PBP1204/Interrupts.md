@@ -1,3 +1,10 @@
+| #   | Mode                                                        |
+| --- | ----------------------------------------------------------- |
+| 00  | No Interrupts                                               |
+| 01  | Choose Interrupt Location based on what is found on Databus |
+| 10  | Load Instruction from Databus                               |
+| 11  | Jump to Zeropage based on Upper bits of Interrupt Register  | 
+
 | Counter | Operation                                                     |
 | ------- | ------------------------------------------------------------- |
 | 0000    | Put SP on Address Bus                                         |
