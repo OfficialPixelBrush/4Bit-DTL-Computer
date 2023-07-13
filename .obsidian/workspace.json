@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "447771316488b20a",
@@ -150,10 +150,10 @@
   "active": "8bbdc54d2e885a6a",
   "lastOpenFiles": [
     "Logisim/PB1204.bak",
-    "PBP1204/Microcode needs.md",
-    "PBP1204/Interrupts.md",
-    "PBP1204/PBP1204.md",
     "PBP1204/Breakdown.md",
+    "PBP1204/Interrupts.md",
+    "PBP1204/Microcode needs.md",
+    "PBP1204/PBP1204.md",
     "Logisim/PB1204.circ",
     "Example/Images.md",
     "Example/masterslaveflipflop.png",
