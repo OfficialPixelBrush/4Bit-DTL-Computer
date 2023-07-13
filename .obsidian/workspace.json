@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "447771316488b20a",
@@ -149,15 +150,18 @@
   },
   "active": "8bbdc54d2e885a6a",
   "lastOpenFiles": [
+    "PBP1204/Microcode/microcodeV2.0.svg",
+    "Logisim/PB1204microcode.bak",
     "PBP1204/PBP1204.md",
     "PBP1204/Microcode/Version Notes.md",
+    "Logisim/PB1204microcode.circ",
+    "PBP1204/Breakdown.md",
     "PBP1204/Microcode/New Text Document.txt",
     "PBP1204/Microcode/microcodeV1.1.svg",
     "PBP1204/Microcode/microcodeV1.png",
     "PBP1204/Microcode/microcodeV1.svg",
     "PBP1204/Microcode",
     "Logisim/PB1204.bak",
-    "PBP1204/Breakdown.md",
     "PBP1204/Interrupts.md",
     "PBP1204/Microcode needs.md",
     "Logisim/PB1204.circ",
