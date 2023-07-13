@@ -18,6 +18,18 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "c6b309ad7474a33e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PBP1204/PBP1204.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
         ]
       }
@@ -130,11 +142,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 210.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -150,10 +163,12 @@
   },
   "active": "8bbdc54d2e885a6a",
   "lastOpenFiles": [
-    "PBP1204/Microcode/microcodeV2.0.svg",
     "Logisim/PB1204microcode.bak",
     "PBP1204/PBP1204.md",
     "PBP1204/Microcode/Version Notes.md",
+    "Logisim/PB1204alu.bak",
+    "Logisim/PB1204alu.circ",
+    "PBP1204/Microcode/microcodeV2.0.svg",
     "Logisim/PB1204microcode.circ",
     "PBP1204/Breakdown.md",
     "PBP1204/Microcode/New Text Document.txt",
