@@ -59,3 +59,4 @@ Still needs some work. Weird increment/decrement oscillation due to constant swi
 ## 2.2
 Note: Resetting of Bitmask Register will indicate start of a new Cycle. This includes resetting a few other registers, like the instruction counter and "HasBitmaskBeenSet" Register
 Meanwhile, Resetting the Instruction Register will indicate a full hardware reset
+![[microcodeV2.2.svg]]
