@@ -1,16 +1,3 @@
-# Microcode 1.1
-![[microcodeV1.1.svg]]
-It kinda works, but is just unmanagable and lacks some functionality, plus it's not nearly modular enough.
-Best case, all the Registers would share increment, decrement, reading, writing, etc functionality, even allowing for some hidden instructions!
-With the current system, one could theoretically overwrite the instruction or bitmask register.
-
-Best case I come up with a modular system that uses a Demux to select a register, but all the other update logic is shared between all of them, reducing component costs and messiness.
-
-Additionally, I really have to rethink the functions. Right now they're a huge mess, not to mention the awfulness that the current ALU is.
-
-I think it'd be best if I design the ALU separately to drop in once it's finalized.
-
-# Microcode 2.0
 
 | #    | Registers               | Group      |
 | ---- | ----------------------- | ---------- |
@@ -49,13 +36,3 @@ I think it'd be best if I design the ALU separately to drop in once it's finaliz
 | 1101 | Read result of ALU SR                             |
 | 1110 | Output Primary                                    |
 | 1111 | Output Secondary                                  |
-![[microcodeV2.0.svg]]
-Still needs some work. Weird increment/decrement oscillation due to constant switching between the two.
-- Has been fixed after latching with SR Latch
-
-## 2.1
-![[microcodeV2.1.svg]]
-
-## 2.2
-Note: Resetting of Bitmask Register will indicate start of a new Cycle. This includes resetting a few other registers, like the instruction counter and "HasBitmaskBeenSet" Register
-Meanwhile, Resetting the Instruction Register will indicate a full hardware reset
