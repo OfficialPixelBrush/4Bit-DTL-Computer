@@ -60,3 +60,16 @@ Still needs some work. Weird increment/decrement oscillation due to constant swi
 Note: Resetting of Bitmask Register will indicate start of a new Cycle. This includes resetting a few other registers, like the instruction counter and "HasBitmaskBeenSet" Register
 Meanwhile, Resetting the Instruction Register will indicate a full hardware reset
 ![[microcodeV2.2.svg]]
+
+- Maybe have the first 4 Register Enables serve double-duty as inverted outputs of flags, only used for Checking them?
+
+| #    | Registers                             | Group      |
+| ---- | ------------------------------------- | ---------- |
+| 0000 | Instruction Register / Not Zero       | Functional |
+| 0001 | Bitmask Register / Not Carry          | Functional |
+| 0010 | Buffer Register / Not Borrow          | Functional |
+| 0011 | Interrupt Mode Register / Even Parity | Mode       |
+| 0100 | Zero                                  | Flag       |
+| 0101 | Carry                                 | Flag       |
+| 0110 | Borrow                                | Flag       |
+| 0111 | Odd Parity                            | Flag       | 
