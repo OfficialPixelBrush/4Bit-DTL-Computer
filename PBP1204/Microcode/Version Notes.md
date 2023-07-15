@@ -73,3 +73,17 @@ Meanwhile, Resetting the Instruction Register will indicate a full hardware rese
 | 0101 | Carry                                 | Flag       |
 | 0110 | Borrow                                | Flag       |
 | 0111 | Odd Parity                            | Flag       | 
+
+# Microcode 2.3
+
+![[microcodeV2.3.svg]]
+
+A simple count program worked!
+
+# Microcode 2.4
+- Bitmask addressing is completely fucked
+- It instantly switches to the selected register and overwrites it, plus it completely disables incrementing other registers
+
+# Microcode 2.5
+- How is the Decoder supposed to know if a Register is 12-Bit or 4-Bit?
+- How can the Decoder determine how many loads it does?
