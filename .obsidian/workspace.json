@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "acc60d943ce96bf3",
+        "id": "a82c2d77e918e545",
         "type": "split",
         "children": [
           {
@@ -29,7 +29,19 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "PBP1204/Microcode/Version Notes.md",
+                    "file": "PBP1204/Version Notes.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                }
+              },
+              {
+                "id": "417e256808bbcae8",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "PBP1204/PBP1204.md",
                     "mode": "source",
                     "source": true
                   }
@@ -39,11 +51,11 @@
             "currentTab": 1
           },
           {
-            "id": "d988bf6aee0f8641",
+            "id": "7fb5dfebc6bbc167",
             "type": "tabs",
             "children": [
               {
-                "id": "417e256808bbcae8",
+                "id": "cd07a24755eddc4f",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -123,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PBP1204/Microcode/Version Notes.md",
+                "file": "PBP1204/Version Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +152,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PBP1204/Microcode/Version Notes.md",
+                "file": "PBP1204/Version Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PBP1204/Microcode/Version Notes.md"
+                "file": "PBP1204/Version Notes.md"
               }
             }
           },
@@ -180,8 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,10 +207,13 @@
   },
   "active": "e9b9ce7445b34288",
   "lastOpenFiles": [
+    "PBP1204/Microcode/microcodeV2.6.svg",
     "PBP1204/Microcode/Microcode Table.md",
     "Logisim/PB1204microcode.bak",
-    "PBP1204/Microcode/Version Notes.md",
     "PBP1204/PBP1204.md",
+    "PBP1204/Version Notes.md",
+    "Logisim/fibbo",
+    "Logisim/count",
     "PBP1204/Test Program.md",
     "PBP1204/Microcode needs.md",
     "PBP1204/Microcode/microcodeV2.3.svg",
@@ -223,7 +237,6 @@
     "Logisim/PB1204.circ",
     "Example/Images.md",
     "Example/masterslaveflipflop.png",
-    "Example/srflipflop.png",
-    "Logisim/Decoding.circ"
+    "Example/srflipflop.png"
   ]
 }

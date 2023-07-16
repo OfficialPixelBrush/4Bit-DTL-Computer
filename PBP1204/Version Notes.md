@@ -1,5 +1,5 @@
 # Microcode 1.1
-![[microcodeV1.1.svg]]
+![microcodeV1.1.svg](microcode/microcodeV1.1.svg)
 It kinda works, but is just unmanagable and lacks some functionality, plus it's not nearly modular enough.
 Best case, all the Registers would share increment, decrement, reading, writing, etc functionality, even allowing for some hidden instructions!
 With the current system, one could theoretically overwrite the instruction or bitmask register.
@@ -48,18 +48,18 @@ I think it'd be best if I design the ALU separately to drop in once it's finaliz
 | 1100 | Read result of ALU SL                             |
 | 1101 | Read result of ALU SR                             |
 | 1110 | Output Primary                                    |
-| 1111 | Output Secondary                                  |
-![[microcodeV2.0.svg]]
+| 1111 | Output Secondary     
+![microcodeV2.0.svg](microcode/microcodeV2.0.svg)
 Still needs some work. Weird increment/decrement oscillation due to constant switching between the two.
 - Has been fixed after latching with SR Latch
 
 ## 2.1
-![[microcodeV2.1.svg]]
+![microcodeV2.1.svg](microcode/microcodeV2.1.svg)
 
 ## 2.2
 Note: Resetting of Bitmask Register will indicate start of a new Cycle. This includes resetting a few other registers, like the instruction counter and "HasBitmaskBeenSet" Register
 Meanwhile, Resetting the Instruction Register will indicate a full hardware reset
-![[microcodeV2.2.svg]]
+![microcodeV2.2.svg](microcode/microcodeV2.2.svg)
 
 - Maybe have the first 4 Register Enables serve double-duty as inverted outputs of flags, only used for Checking them?
 
@@ -76,7 +76,7 @@ Meanwhile, Resetting the Instruction Register will indicate a full hardware rese
 
 # Microcode 2.3
 
-![[microcodeV2.3.svg]]
+![microcodeV2.3.svg](microcode/microcodeV2.3.svg)
 
 A simple count program worked!
 
@@ -87,3 +87,8 @@ A simple count program worked!
 # Microcode 2.5
 - How is the Decoder supposed to know if a Register is 12-Bit or 4-Bit?
 - How can the Decoder determine how many loads it does?
+
+# Microcode 2.6
+![microcodeV2.6.svg](microcode/microcodeV2.6.svg)
+
+It works so damn well. Still no SP yet.
