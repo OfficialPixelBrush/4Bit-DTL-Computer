@@ -92,3 +92,19 @@ A simple count program worked!
 ![microcodeV2.6.svg](Microcode/microcodeV2.6.svg)
 
 It works so damn well. Still no SP yet.
+
+Test Program:
+LD A,6
+LD B,3
+NAND
+NOR
+NOT
+ADD
+SL
+SR
+ST A,0x100
+
+# Microcode 2.7
+![microcodeV2.7.svg](Microcode/microcodeV2.7.svg)
+
+- For some reason the Instruction register gets updated when only the Bitmask Register should be updated?
