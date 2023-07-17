@@ -23,8 +23,11 @@ More info on the PBP's Instruction Set and features can be found in [PBP-1204](P
 The PBCM-1604 will provide the Computer with a total of 1 Kilonibbles per Module.
 
 # Example Software
-Example Code and Programs can be found in the Example Subdirectory. 
-I try to keep the code as well-commented and understandable as possible, so even a novice Programmer can read and write PBP-1204 Assembly Code.
+**NOTE:**
+None of the following example Programs work, as the actual Binaries for the Processor have changed as I've designed the Microcode and actual circuitry. I'll update these programs and the assembler once all of that has been finalized!
+
+~~Example Code and Programs can be found in the Example Subdirectory. 
+I try to keep the code as well-commented and understandable as possible, so even a novice Programmer can read and write PBP-1204 Assembly Code.~~
 
 Some of the Programs include:
 

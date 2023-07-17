@@ -112,9 +112,14 @@ ST A,0x100
 # Microcode 2.8
 - Will likely need a rework with properly planned steps
 
-| Part of the Cycle | Action |
-| ----------------- | ------ |
-| Rising Edge       | Data from         |
-| High Level        |        |
-| Falling Edge      |        |
-| Low Level         |        |
+| Part of the Cycle | Action           |
+| ----------------- | ---------------- |
+| Rising Edge       | Output Registers |
+| High Level        | Execute Function |
+| Falling Edge      | Latch Output     |
+| Low Level         | Store Output     | 
+
+Aka:
+Run stuff -> Store stuff
+
+
