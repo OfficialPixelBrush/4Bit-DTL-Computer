@@ -108,3 +108,13 @@ ST A,0x100
 ![microcodeV2.7.svg](Microcode/microcodeV2.7.svg)
 
 - For some reason the Instruction register gets updated when only the Bitmask Register should be updated?
+
+# Microcode 2.8
+- Will likely need a rework with properly planned steps
+
+| Part of the Cycle | Action |
+| ----------------- | ------ |
+| Rising Edge       | Data from         |
+| High Level        |        |
+| Falling Edge      |        |
+| Low Level         |        |

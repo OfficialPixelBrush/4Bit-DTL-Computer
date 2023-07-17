@@ -30,7 +30,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "PBP1204/Version Notes.md",
-                    "mode": "preview",
+                    "mode": "source",
                     "source": true
                   }
                 }
@@ -207,11 +207,12 @@
   },
   "active": "e9b9ce7445b34288",
   "lastOpenFiles": [
+    "PBP1204/Microcode/Microcode Table.md",
+    "Logisim/PB1204microcode.bak",
+    "Logisim/12bitstore",
+    "PBP1204/Version Notes.md",
     "PBP1204/Microcode/microcodeV2.7.svg",
     "PBP1204/PBP1204.md",
-    "Logisim/PB1204microcode.bak",
-    "PBP1204/Microcode/Microcode Table.md",
-    "PBP1204/Version Notes.md",
     "Logisim/PB1204alu.bak",
     "PBP1204/Microcode/microcodeV2.6.svg",
     "Logisim/fibbo",
@@ -235,9 +236,7 @@
     "PBP1204/Microcode/microcodeV1.svg",
     "PBP1204/Microcode",
     "Logisim/PB1204.bak",
-    "Logisim/PB1204.circ",
     "Example/Images.md",
-    "Example/masterslaveflipflop.png",
-    "Example/srflipflop.png"
+    "Example/masterslaveflipflop.png"
   ]
 }
