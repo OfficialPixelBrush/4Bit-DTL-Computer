@@ -44,6 +44,8 @@ This Computer absolutely won't be the fastest, and while I could absolutely opt 
 To add onto this, I'm just one dude that knows a little bit of Z80 Assembly. My instruction set is far from perfect, but it's just supposed to be easy to understand and decently easy to implement.
 
 # Future Plans
-Well, hopefully I'll get to build the thing someday! Right now the Processor is taking center stage, this involves refining, tweaking, overhauling the instruction set, for instance. Right now it's slowly moving towards actually designing the actual hardware needed to make this thing work as intended, which is easier said than done, especially when you lack any and all experience in designing an ungodly fusion of CISC and RISC, while only having a vague understanding of the Fetch, Decode, Execute Cycle.
+Well, hopefully I'll get to build the thing someday! Right now the Processor is taking center stage, this involves refining, tweaking, overhauling the instruction set, for instance. Right now it's slowly moving towards actually designing the actual hardware needed to make this thing work as intended, which is easier said than done, especially when you lack any and all experience in designing an ungodly fusion of CISC and RISC*, while only having a vague understanding of the Fetch, Decode, Execute Cycle.
+
+*(Edit: I have since found out this is exactly what Microcode is, so my "ungodly fusion" isn't too ungodly!)
 
 Once the Processor is fully working reliably, with a low part count and all that, I'd like to get work done on the Core Memory. I've already been experimenting with it from time to time, with very disappointing results, mainly due to a lack of information and experts on the topic, at least online.
