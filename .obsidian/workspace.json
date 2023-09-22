@@ -4,16 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "e19760d08b2e813f",
+        "id": "5cd1f4e3c3559d03",
         "type": "tabs",
+        "dimension": 27.452025586353944,
         "children": [
           {
-            "id": "8bbdc54d2e885a6a",
+            "id": "7f22b6a6eb15d37c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Example/masterslaveflipflop.png"
+                "file": "PBP1204/Microcode/Microcode Table.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "2577b4e945116fab",
+        "type": "tabs",
+        "dimension": 72.54797441364606,
+        "children": [
+          {
+            "id": "33f38ef96052f53b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PBP1204/Microcode/Microcode Table V2.md",
+                "mode": "source",
+                "source": true
               }
             }
           }
@@ -67,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5110321044922
+    "width": 258.5110321044922,
+    "collapsed": true
   },
   "right": {
     "id": "447771316488b20a",
@@ -83,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Example/masterslaveflipflop.png",
+                "file": "PBP1204/Microcode/Microcode Table V2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Example/masterslaveflipflop.png",
+                "file": "PBP1204/Microcode/Microcode Table V2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Example/masterslaveflipflop.png"
+                "file": "PBP1204/Microcode/Microcode Table V2.md"
               }
             }
           },
@@ -140,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -153,39 +177,39 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8bbdc54d2e885a6a",
+  "active": "33f38ef96052f53b",
   "lastOpenFiles": [
-    "PBP1204/PBP1204.md",
-    "README.md",
+    "Logisim/PBP1204.bak",
     "PBP1204/Microcode/Microcode Table.md",
+    "PBP1204/Microcode/Microcode Table V2.md",
+    "PBP1204/PBP1204.md",
+    "PBP1204/Test Program.md",
+    "Logisim/PBP1204.circ",
+    "Logisim/old/PB1204microcode.circ",
+    "Logisim/old/PB1204alu.circ",
+    "Logisim/old/PB1204.circ",
+    "Logisim/old/fibbo",
+    "Logisim/old/Decoding.circ",
+    "Logisim/old/count",
+    "Logisim/old/12bitstore",
+    "Logisim/old/4BitDTLComputer.circ",
+    "PBP1204/Microcode/Z80_arch.svg",
+    "PBP1204/Microcode/microcodeV2.7.svg",
+    "Example/masterslaveflipflop.png",
+    "README.md",
     "PBP1204/Version Notes.md",
     "Untitled.canvas",
-    "Logisim/PB1204microcode.bak",
-    "Logisim/12bitstore",
-    "PBP1204/Microcode/microcodeV2.7.svg",
-    "Logisim/PB1204alu.bak",
     "PBP1204/Microcode/microcodeV2.6.svg",
-    "Logisim/fibbo",
-    "Logisim/count",
-    "PBP1204/Test Program.md",
     "PBP1204/Microcode needs.md",
     "PBP1204/Microcode/microcodeV2.3.svg",
-    "Untitled.md",
     "Untitled 1.canvas",
     "PBP1204/Interrupts.md",
     "PBP1204/Breakdown.md",
     "PBP1204/Microcode/microcodeV2.2.svg",
     "PBP1204/Microcode/microcodeV2.1.svg",
     "PBP1204/Microcode/microcodeV2.0.svg",
-    "Logisim/PB1204alu.circ",
-    "Logisim/PB1204microcode.circ",
-    "PBP1204/Microcode/New Text Document.txt",
     "PBP1204/Microcode/microcodeV1.1.svg",
     "PBP1204/Microcode/microcodeV1.png",
-    "PBP1204/Microcode/microcodeV1.svg",
-    "PBP1204/Microcode",
-    "Logisim/PB1204.bak",
-    "Example/Images.md",
-    "Example/masterslaveflipflop.png"
+    "Example/Images.md"
   ]
 }
