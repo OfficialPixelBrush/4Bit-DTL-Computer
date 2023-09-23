@@ -4,42 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "5cd1f4e3c3559d03",
-        "type": "tabs",
-        "dimension": 27.452025586353944,
+        "id": "c85d9887e6c690b4",
+        "type": "split",
         "children": [
           {
-            "id": "7f22b6a6eb15d37c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PBP1204/Microcode/Microcode Table.md",
-                "mode": "source",
-                "source": true
+            "id": "7cf00531ab058aa0",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5c3d62430c71bc66",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "PBP1204/PBP1204.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                }
               }
-            }
-          }
-        ]
-      },
-      {
-        "id": "2577b4e945116fab",
-        "type": "tabs",
-        "dimension": 72.54797441364606,
-        "children": [
+            ]
+          },
           {
-            "id": "33f38ef96052f53b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PBP1204/Microcode/Microcode Table V2.md",
-                "mode": "source",
-                "source": true
+            "id": "7d1ff5f303091618",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5b0c81b4a9efd081",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "PBP1204/Microcode/Microcode Table V2.md",
+                    "mode": "source",
+                    "source": true
+                  }
+                }
               }
-            }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -52,16 +57,6 @@
         "id": "a9d6afd54bafc8ec",
         "type": "tabs",
         "children": [
-          {
-            "id": "5b0c81b4a9efd081",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
           {
             "id": "610408f4d1371e88",
             "type": "leaf",
@@ -84,13 +79,23 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "09231ff0c31c0936",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 258.5110321044922,
-    "collapsed": true
+    "width": 258.5110321044922
   },
   "right": {
     "id": "447771316488b20a",
@@ -177,39 +182,39 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "33f38ef96052f53b",
+  "active": "5b0c81b4a9efd081",
   "lastOpenFiles": [
     "Logisim/PBP1204.bak",
-    "PBP1204/Microcode/Microcode Table.md",
-    "PBP1204/Microcode/Microcode Table V2.md",
     "PBP1204/PBP1204.md",
-    "PBP1204/Test Program.md",
-    "Logisim/PBP1204.circ",
-    "Logisim/old/PB1204microcode.circ",
-    "Logisim/old/PB1204alu.circ",
-    "Logisim/old/PB1204.circ",
-    "Logisim/old/fibbo",
-    "Logisim/old/Decoding.circ",
-    "Logisim/old/count",
-    "Logisim/old/12bitstore",
-    "Logisim/old/4BitDTLComputer.circ",
+    "PBP1204/Microcode/Microcode Table V2.md",
+    "PBP1204/Microcode/cpuArch.svg",
+    "PBP1204/Microcode/Microcode Table.md",
     "PBP1204/Microcode/Z80_arch.svg",
+    "PBP1204/Microcode/microcodeV3.0.svg",
     "PBP1204/Microcode/microcodeV2.7.svg",
-    "Example/masterslaveflipflop.png",
-    "README.md",
-    "PBP1204/Version Notes.md",
-    "Untitled.canvas",
     "PBP1204/Microcode/microcodeV2.6.svg",
-    "PBP1204/Microcode needs.md",
     "PBP1204/Microcode/microcodeV2.3.svg",
-    "Untitled 1.canvas",
-    "PBP1204/Interrupts.md",
-    "PBP1204/Breakdown.md",
     "PBP1204/Microcode/microcodeV2.2.svg",
     "PBP1204/Microcode/microcodeV2.1.svg",
     "PBP1204/Microcode/microcodeV2.0.svg",
     "PBP1204/Microcode/microcodeV1.1.svg",
-    "PBP1204/Microcode/microcodeV1.png",
+    "Logisim/microcode30",
+    "Logisim/components/4BitRegisterWithSetReset.bak",
+    "Logisim/components/4BitRegisterWithSetReset.circ",
+    "Logisim/components/EdgeTriggeredDflipflopWithSetAndReset.bak",
+    "Logisim/components/EdgeTriggeredDflipflopWithSetAndReset.circ",
+    "Logisim/components",
+    "Logisim/New Folder",
+    "PBP1204/Test Program.md",
+    "Logisim/PBP1204.circ",
+    "Logisim/old/PB1204microcode.circ",
+    "README.md",
+    "PBP1204/Version Notes.md",
+    "Untitled.canvas",
+    "PBP1204/Microcode needs.md",
+    "Untitled 1.canvas",
+    "PBP1204/Interrupts.md",
+    "PBP1204/Breakdown.md",
     "Example/Images.md"
   ]
 }
