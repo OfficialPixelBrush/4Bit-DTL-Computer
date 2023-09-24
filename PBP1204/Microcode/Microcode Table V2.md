@@ -9,24 +9,24 @@ Rising Edge: Used to let Data Stabilize, Decoding of Microinstruction
 Falling Edge: Used to let contents of Registers be updated
 
 ### Internal Instructions/Actions
-| Index | #   | Name                      | Short | Function                                            | Goes from   | Goes To/Affects |
-| ----- | --- | ------------------------- | ----- | --------------------------------------------------- | ----------- | --------------- |
-| 0000  | 0   | Read from Data bus        | RDB   | Read directly from Data bus                         | DB          | LB,MB,HB,IR     |
-| 0001  | 1   | Write to Data bus         | WDB   | Output data to the Data bus                         | LB,MB,HB    | DB              |
-| 0010  | 2   | Read from Buffer Register | RBR   | Read contents from the Buffer to Register           | LB,MB,HB    | AR,BR,TF,PC,SP  |
-| 0011  | 3   | Write to Buffer Register  | WBR   | Write contents of Register to Buffer                | AR,BR,PC,SP | LB,MB,HB        |
-| 0100  | 4   | Update Bitmask Register   | UBM   | Update the Contents of the Bitmask                  | DB          | BM              |
-| 0101  | 5   | Update Address Register   | UAR   | Updates Address Register with contents of  PC or SP | PC,SP       | AB              |
-| 0110  | 6   | Check Flags               | CTF   | If TF && F == 1, write Buffers to PC.               | LB,MB,HB    | PC              |
-| 0111  | 7   | Reset Register to Default | RRD   | Clears/Fills the relevant Register                  |             | any             |
-| 1000  | 8   | Read result of ALU NAND   | ANA   |                                                     | ALU         | LB              |
-| 1001  | 9   | Read result of ALU NOR    | ANO   |                                                     | ALU         | LB              |
-| 1010  | A   | Read result of ALU NOT    | ANT   |                                                     | ALU         | LB              |
-| 1011  | B   | Read result of ALU ADD    | AAD   |                                                     | ALU         | LB              |
-| 1100  | C   | Read result of ALU SL     | ASL   |                                                     | ALU         | LB              |
-| 1101  | D   | Read result of ALU SR     | ASR   |                                                     | ALU         | LB              |
-| 1110  | E   | Increment Register        | INC   | Used to Increment PC or SP                          |             | PC,SP           |
-| 1111  | F   | Decrement Register        | DEC   | Used to Decrement SP                                |             | SP              |
+| Index | #   | Name                      | Short | Function                                                                     | Goes from   | Goes To/Affects |
+| ----- | --- | ------------------------- | ----- | ---------------------------------------------------------------------------- | ----------- | --------------- |
+| 0000  | 0   | Read from Data bus        | RDB   | Read directly from Data bus                                                  | DB          | LB,MB,HB,IR     |
+| 0001  | 1   | Write to Data bus         | WDB   | Output data to the Data bus                                                  | LB,MB,HB    | DB              |
+| 0010  | 2   | Read from Buffer Register | RBR   | Read contents from the Buffer to Register                                    | LB,MB,HB    | AR,BR,TF,PC,SP  |
+| 0011  | 3   | Write to Buffer Register  | WBR   | Write contents of Register to Buffer                                         | AR,BR,PC,SP | LB,MB,HB        |
+| 0100  | 4   |                           |       |                                                                              |             |                 |
+| 0101  | 5   | Update Address Register   | UAR   | Updates Address Register with contents of  PC or SP                          | PC,SP       | AB              |
+| 0110  | 6   | Check Flags               | CTF   | If the Flag that TF asks for is true, update PC with value stored in Buffers | LB,MB,HB    | PC              |
+| 0111  | 7   | Reset Register to Default | RRD   | Clears/Fills the relevant Register                                           |             | any             |
+| 1000  | 8   | Read result of ALU NAND   | ANA   |                                                                              | ALU         | LB              |
+| 1001  | 9   | Read result of ALU NOR    | ANO   |                                                                              | ALU         | LB              |
+| 1010  | A   | Read result of ALU NOT    | ANT   |                                                                              | ALU         | LB              |
+| 1011  | B   | Read result of ALU ADD    | AAD   |                                                                              | ALU         | LB              |
+| 1100  | C   | Read result of ALU SL     | ASL   |                                                                              | ALU         | LB              |
+| 1101  | D   | Read result of ALU SR     | ASR   |                                                                              | ALU         | LB              |
+| 1110  | E   | Increment Register        | INC   | Used to Increment PC or SP                                                   |             | PC,SP           |
+| 1111  | F   | Decrement Register        | DEC   | Used to Decrement SP                                                         |             | SP              |
 
 ### Internal Registers/Locations
 | Index | #   | Name                   | Short | Use                                                               |
@@ -60,6 +60,28 @@ Falling Edge: Used to let contents of Registers be updated
 | Program Counter | PC    | Combination of LPC,MPC,HPC into one |
 | Stack Pointer   | SP    | Combination of LSP,MSP,HSP into one |
 
+## Testable Flags
+
+| Index | #   | Name                         | Short |
+| ----- | --- | ---------------------------- | ----- |
+| 0000  | 0   | Zero                         | Z     |
+| 0001  | 1   | Carry                        | C     |
+| 0010  | 2   | Borrow                       | B     |
+| 0011  | 3   | Even Parity                  | EP    |
+| 0100  | 4   | Not Zero                     | NZ    |
+| 0101  | 5   | Not Carry                    | NC    |
+| 0110  | 6   | Not Borrow                   | NB    |
+| 0111  | 7   | Not Even Parity (Odd Parity) | OP    |
+| 1000  | 8   |                              |       |
+| 1001  | 9   |                              |       |
+| 1010  | A   |                              |       |
+| 1011  | B   |                              |       |
+| 1100  | C   |                              |       |
+| 1101  | D   |                              |       |
+| 1110  | E   |                              |       |
+| 1111  | F   |                              |       |
+
+
 # Example Microcode for ADD
 1. Read from Data bus -> IR
 2. Read result of ALU ADD -> LB
@@ -77,6 +99,18 @@ Falling Edge: Used to let contents of Registers be updated
 **or in Hex**
 00 1B 42 9E 95 C7
 
+# Another Example Program
+```
+LD A,0
+LD B,1
+loop:
+ADD
+SWP
+ST A,0x800
+JMP NC,loop
+halt:
+LD PC,halt
+```
 
 # Example Program
 

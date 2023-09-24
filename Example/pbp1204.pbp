@@ -1,0 +1,137 @@
+#once
+#bankdef microcode
+{
+    #addr 0x000
+    #addr_end 0xfff
+    #outp 4 * 0x00
+	#bits 4
+}
+
+#subruledef register
+{
+    a => 0x4
+    b => 0x5
+    pc => 0x8
+	sp => 0xc
+}
+
+#subruledef flag
+{
+    z => 0x0
+    c => 0x1
+    b => 0x2
+	ep => 0x3
+    nz => 0x4
+	nc => 0x5
+    nb => 0x6
+	op => 0x7
+}
+
+#ruledef
+{
+	; LD4
+	ld {r: register},{value : u4} =>
+    {
+        assert(r <= 0x7)
+        0x0 @ r @ value`4
+    }
+	
+	; LD12
+	ld {r: register},{value : u12} =>
+    {
+        assert(r >= 0x8)
+		value0 = value & 0xF00;
+		value0 = value0/256;
+		
+		value1 = value & 0x0F0;
+		value1 = value1/16;
+		
+		value2 = value & 0x00F;
+        0x0 @ r @ value2`4 @ value1`4 @ value0`4
+    }
+	
+	; ST4
+	st {r: register},{addr: u12} =>
+    {
+        assert(r <= 0x7)
+		addr0 = addr & 0xF00;
+		addr0 = addr0/256;
+		
+		addr1 = addr & 0x0F0;
+		addr1 = addr1/16;
+		
+		addr2 = addr & 0x00F;
+        0x1 @ r  @ addr2`4 @ addr1`4 @ addr0`4
+    }
+	
+	; ST12
+	st {r: register},{addr: u12} =>
+    {
+        assert(r >= 0x8)
+		addr0 = addr & 0xF00;
+		addr0 = addr0/256;
+		
+		addr1 = addr & 0x0F0;
+		addr1 = addr1/16;
+		
+		addr2 = addr & 0x00F;
+        0x1 @ r @ addr2`4 @ addr1`4 @ addr0`4
+    }
+	
+	; LDD
+	ldd {r: register},{addr : u12}  => {
+		addr = addr-1;
+		addr0 = addr & 0xF00;
+		addr0 = addr0/256;
+		
+		addr1 = addr & 0x0F0;
+		addr1 = addr1/16;
+		
+		addr2 = addr & 0x00F;
+		0x2 @ r @ addr2`4 @ addr1`4 @ addr0`4
+	} 
+	
+	psh {r: register}  => 0x3 @ r
+	pop {r: register}  => 0x4 @ r
+	
+	jsr {f: flag},{addr: u12} =>
+	{
+		addr = addr-1;
+		addr0 = addr & 0xF00;
+		addr0 = addr0/256;
+		
+		addr1 = addr & 0x0F0;
+		addr1 = addr1/16;
+		
+		addr2 = addr & 0x00F;
+        0x5 @ f @ addr2`4 @ addr1`4 @ addr0`4
+	}
+	
+	ret => 0x6
+	
+	
+	jmp {f: flag},{addr: u12} =>
+    {
+		addr = addr-1;
+		addr0 = addr & 0xF00;
+		addr0 = addr0/256;
+		
+		addr1 = addr & 0x0F0;
+		addr1 = addr1/16;
+		
+		addr2 = addr & 0x00F;
+        0x7 @ f @ addr2`4 @ addr1`4 @ addr0`4
+    }
+	
+    nand => 0x8
+    nor => 0x9
+	not => 0xa
+	add => 0xb
+	sl => 0xc
+	sr => 0xd
+	
+	swp => 0xe
+	
+	clr {f: flag} => 0xf @ f
+	
+}

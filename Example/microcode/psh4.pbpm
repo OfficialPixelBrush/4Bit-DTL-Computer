@@ -1,0 +1,24 @@
+#include "microcode.pbpm"
+; --- PSH r4
+; same intro for all
+RDB IR
+INC PC
+UAR PC
+
+; load register to be pushed
+RDB BM
+WBR BMP
+
+; output sp
+UAR SP
+
+; write to DB
+WDB LB
+
+; dec sp
+DEC SP
+
+; Finish instruction
+INC PC
+UAR PC
+RRD IR

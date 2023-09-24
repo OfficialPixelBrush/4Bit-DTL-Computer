@@ -1,0 +1,64 @@
+#once
+#bankdef microcode
+{
+    #addr 0x000
+    #size 0x400
+    #outp 8 * 0x00
+	#bits 8
+}
+
+#ruledef register
+{
+    ir => 0x0
+    lb => 0x1
+    mb => 0x2
+	hb => 0x3
+	ar => 0x4
+	br => 0x5
+	tf => 0x6
+	bm => 0x7
+	lpc => 0x8
+	mpc => 0x9
+	hpc => 0xa
+	int => 0xb
+	lsp => 0xc
+	msp => 0xd
+	hsp => 0xe
+	bmp => 0xf
+	
+	pc => 0x8
+	sp => 0xc
+}
+
+#ruledef flag
+{
+    z => 0
+    c => 1
+    b => 2
+	ep => 3
+    nz => 4
+	nc => 5
+    nb => 6
+	op => 7
+}
+
+#ruledef
+{
+	rdb {r: register} => r @ 0x0
+	wdb {r: register} => r @ 0x1 
+	rbr {r: register} => r @ 0x2
+	wbr {r: register} => r @ 0x3
+	; unused
+	uar {r: register} => r @ 0x5
+	ctf {r: register} => r @ 0x6
+	rrd {r: register} => r @ 0x7
+	
+	ana {r: register} => r @ 0x8
+	ano {r: register} => r @ 0x9
+	ant {r: register} => r @ 0xa
+	aad {r: register} => r @ 0xb
+	asl {r: register} => r @ 0xc
+	asr {r: register} => r @ 0xd
+	inc {r: register} => r @ 0xe
+	dec {r: register} => r @ 0xf
+}
