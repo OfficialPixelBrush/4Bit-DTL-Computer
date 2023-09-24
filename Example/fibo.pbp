@@ -1,13 +1,31 @@
 #include "pbp1204.pbp"
 ; Fibo Sequence in 8 Bit
+;
+LD A,1
+ST A,0x800
 LD A,0
-LD B,1
+ST A,0x801
+ST A,0x802
+ST A,0x803
 
 fibo:
+CLR C
+; low
+LDD A,0x800
+LDD B,0x802
 ADD
-STA 
+ST  A,0x800
+SWP
+ST  A,0x801
 
-PSH A
+; high
+LDD A,0x801
+LDD B,0x803
+ADD
+ST  A,0x801
+SWP
+ST  A,0x803
+
 JMP NC,fibo
 
 halt:

@@ -1,0 +1,14 @@
+#include "microcode.pbpm"
+; same intro for all
+RDB IR
+INC PC
+UAR PC
+
+; Reset Flag
+RDB BM
+RSF BMP
+
+; Finish instruction
+INC PC
+UAR PC
+RRD IR

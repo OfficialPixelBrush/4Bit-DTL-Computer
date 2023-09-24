@@ -14,7 +14,7 @@
       <a name="facing" val="west"/>
     </tool>
     <tool name="Pull Resistor">
-      <a name="facing" val="east"/>
+      <a name="facing" val="north"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>

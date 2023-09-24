@@ -80,7 +80,6 @@
 	
 	; LDD
 	ldd {r: register},{addr : u12}  => {
-		addr = addr-1;
 		addr0 = addr & 0xF00;
 		addr0 = addr0/256;
 		

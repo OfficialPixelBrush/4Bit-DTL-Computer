@@ -10,7 +10,7 @@
           {
             "id": "7cf00531ab058aa0",
             "type": "tabs",
-            "dimension": 13.085106382978722,
+            "dimension": 51.755319148936174,
             "children": [
               {
                 "id": "5c3d62430c71bc66",
@@ -29,7 +29,7 @@
           {
             "id": "7d1ff5f303091618",
             "type": "tabs",
-            "dimension": 86.91489361702128,
+            "dimension": 48.24468085106383,
             "children": [
               {
                 "id": "5b0c81b4a9efd081",
@@ -38,7 +38,7 @@
                   "type": "markdown",
                   "state": {
                     "file": "PBP1204/Microcode/Microcode Table V2.md",
-                    "mode": "preview",
+                    "mode": "source",
                     "source": true
                   }
                 }
@@ -97,8 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 258.5110321044922,
-    "collapsed": true
+    "width": 258.5110321044922
   },
   "right": {
     "id": "447771316488b20a",
@@ -187,31 +186,31 @@
   },
   "active": "5b0c81b4a9efd081",
   "lastOpenFiles": [
+    "Logisim/PBP1204.bak",
+    "Example/microcode/st4.bin",
+    "Example/microcode/st4.pbpm",
+    "Example/microcode/ld4 - Copy.pbpm",
+    "Example/microcode/ldd4.bin",
+    "Example/microcode/ldd4.pbpm",
+    "Example/microcode/New Text Document.txt",
+    "Example/microcode/clrf.pbpm",
+    "Example/microcode/clrf.bin",
+    "Example/microcode/clrf.txt",
+    "Pasted image 20230924220753.png",
+    "PBP1204/Microcode/Microcode Table.md",
+    "PBP1204/Microcode/cpuArch.svg",
+    "Circuits/Dflipflop.png",
+    "PBP1204/Microcode/Microcode Table V2.md",
     "Logisim/components/12BitIncrementAndDecrementCounterWithLoadAndSetReset.bak",
-    "Logisim/components/12BitIncrementAndDecrementCounterWithLoadAndSetReset.circ",
-    "Logisim/components/4BitIncrementAndDecrementCounterWithLoadAndSetReset.bak",
-    "Logisim/components/4BitIncrementAndDecrementCounterWithLoadAndSetReset.circ",
     "PBP1204/Microcode/microcodeV3.1.svg",
     "PBP1204/PBP1204.md",
-    "PBP1204/Microcode/Microcode Table V2.md",
-    "Logisim/PBP1204.bak",
-    "Example/pbp1204.pbp",
-    "Example/pbp1204.rules",
-    "Example/New Text Document.txt",
-    "Example/microcode/assemble.bat",
-    "Example/microcode/New Text Document.txt",
-    "Example/microcode/psh4.txt",
     "Example/old/srflipflop.png",
     "Example/old/masterslaveflipflop.png",
     "Example/old/Images.md",
-    "PBP1204/Microcode/cpuArch.svg",
-    "PBP1204/Microcode/Microcode Table.md",
     "PBP1204/Microcode/Z80_arch.svg",
     "PBP1204/Microcode/microcodeV3.0.svg",
     "PBP1204/Microcode/microcodeV2.7.svg",
     "PBP1204/Microcode/microcodeV2.6.svg",
-    "PBP1204/Microcode/microcodeV2.3.svg",
-    "PBP1204/Microcode/microcodeV2.2.svg",
     "PBP1204/Test Program.md",
     "README.md",
     "PBP1204/Version Notes.md",

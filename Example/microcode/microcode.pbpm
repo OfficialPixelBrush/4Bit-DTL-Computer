@@ -26,6 +26,7 @@
 	hsp => 0xe
 	bmp => 0xf
 	
+	ab => 0x6
 	pc => 0x8
 	sp => 0xc
 }
@@ -40,6 +41,7 @@
 	nc => 5
     nb => 6
 	op => 7
+	bmp => 0xf
 }
 
 #ruledef
@@ -48,9 +50,9 @@
 	wdb {r: register} => r @ 0x1 
 	rbr {r: register} => r @ 0x2
 	wbr {r: register} => r @ 0x3
-	; unused
+	rsf {f: flag    } => f @ 0x4
 	uar {r: register} => r @ 0x5
-	ctf {r: register} => r @ 0x6
+	ctf {f: flag    } => r @ 0x6
 	rrd {r: register} => r @ 0x7
 	
 	ana {r: register} => r @ 0x8
