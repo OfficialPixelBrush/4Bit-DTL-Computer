@@ -1,0 +1,14 @@
+#include "pbp1204.pbp"
+; Fibo Sequence in 8 Bit
+;
+LD A,0
+LD B,1
+
+fibo:
+ADD
+PSH A
+SWP
+JMP NC,fibo
+
+halt:
+LD PC,halt

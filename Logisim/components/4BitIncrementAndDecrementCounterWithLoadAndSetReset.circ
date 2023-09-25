@@ -47,7 +47,6 @@
     <sep/>
     <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
-      <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </tool>
     <sep/>
@@ -75,6 +74,18 @@
     <a name="circuit" val="NibbleIncrementAndDecrementCounterWithLoadAndSetReset"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="32.0"/>
+    <comp lib="0" loc="(1060,790)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CarryOutLow"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1070,570)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CarryOutHigh"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(1070,680)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -88,10 +99,6 @@
     <comp lib="0" loc="(350,140)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="LOAD"/>
-    </comp>
-    <comp lib="0" loc="(360,550)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="label" val="UPDOWN"/>
     </comp>
     <comp lib="0" loc="(360,660)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -110,6 +117,14 @@
     <comp lib="0" loc="(380,310)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="SET"/>
+    </comp>
+    <comp lib="0" loc="(390,550)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CarryInHigh"/>
+    </comp>
+    <comp lib="0" loc="(390,810)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CarryInLow"/>
     </comp>
     <comp lib="0" loc="(430,100)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -147,9 +162,7 @@
     <comp lib="1" loc="(1030,570)" name="AND Gate"/>
     <comp lib="1" loc="(1030,790)" name="AND Gate"/>
     <comp lib="1" loc="(1040,680)" name="OR Gate"/>
-    <comp lib="1" loc="(390,550)" name="NOT Gate"/>
     <comp lib="1" loc="(410,160)" name="AND Gate"/>
-    <comp lib="1" loc="(440,810)" name="NOT Gate"/>
     <comp lib="1" loc="(460,390)" name="OR Gate">
       <a name="facing" val="south"/>
     </comp>
@@ -231,8 +244,10 @@
     <wire from="(1030,790)" to="(1040,790)"/>
     <wire from="(1040,150)" to="(1040,190)"/>
     <wire from="(1040,570)" to="(1040,640)"/>
+    <wire from="(1040,570)" to="(1070,570)"/>
     <wire from="(1040,680)" to="(1070,680)"/>
     <wire from="(1040,720)" to="(1040,790)"/>
+    <wire from="(1040,790)" to="(1060,790)"/>
     <wire from="(240,180)" to="(240,700)"/>
     <wire from="(240,180)" to="(360,180)"/>
     <wire from="(240,700)" to="(310,700)"/>
@@ -244,9 +259,8 @@
     <wire from="(370,430)" to="(480,430)"/>
     <wire from="(380,290)" to="(510,290)"/>
     <wire from="(380,310)" to="(440,310)"/>
-    <wire from="(390,550)" to="(390,810)"/>
     <wire from="(390,550)" to="(500,550)"/>
-    <wire from="(390,810)" to="(410,810)"/>
+    <wire from="(390,810)" to="(500,810)"/>
     <wire from="(410,160)" to="(470,160)"/>
     <wire from="(410,700)" to="(410,750)"/>
     <wire from="(410,700)" to="(430,700)"/>
@@ -257,7 +271,6 @@
     <wire from="(430,100)" to="(480,100)"/>
     <wire from="(440,310)" to="(440,340)"/>
     <wire from="(440,310)" to="(600,310)"/>
-    <wire from="(440,810)" to="(500,810)"/>
     <wire from="(460,390)" to="(460,650)"/>
     <wire from="(460,710)" to="(460,840)"/>
     <wire from="(460,840)" to="(530,840)"/>
