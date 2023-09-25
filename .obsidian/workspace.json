@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PBP1204/Interrupts.md",
+                "file": "PBP1204/Misc Notes.md",
                 "mode": "source",
                 "source": true
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PBP1204/Interrupts.md",
+                "file": "PBP1204/Misc Notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PBP1204/Interrupts.md",
+                "file": "PBP1204/Misc Notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PBP1204/Interrupts.md"
+                "file": "PBP1204/Misc Notes.md"
               }
             }
           },
@@ -157,12 +157,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "09231ff0c31c0936",
+  "active": "5b0c81b4a9efd081",
   "lastOpenFiles": [
-    "PBP1204/Microcode needs.md",
     "PBP1204/PBP1204.md",
-    "PBP1204/Test Program.md",
-    "PBP1204/Microcode/Microcode Table V2.md",
+    "PBP1204/Misc Notes.md",
+    "PBP1204/Version Notes.md",
+    "PBP1204/Outdated/Breakdown.md",
+    "PBP1204/Outdated",
+    "PBP1204/Microcode/Microcode Table.md",
+    "PBP1204/Outdated/Interrupts.md",
+    "PBP1204/Outdated/Microcode needs.md",
+    "PBP1204/Outdated/Test Program.md",
     "Logisim/PBP1204.bak",
     "Example/microcode/st4.bin",
     "Example/microcode/st4.pbpm",
@@ -172,9 +177,8 @@
     "Example/microcode/New Text Document.txt",
     "Example/microcode/clrf.pbpm",
     "Example/microcode/clrf.bin",
-    "Example/microcode/clrf.txt",
     "Pasted image 20230924220753.png",
-    "PBP1204/Microcode/Microcode Table.md",
+    "PBP1204/Microcode/Old Microcode Table.md",
     "PBP1204/Microcode/cpuArch.svg",
     "Circuits/Dflipflop.png",
     "PBP1204/Microcode/microcodeV3.1.svg",
@@ -186,11 +190,8 @@
     "PBP1204/Microcode/microcodeV2.7.svg",
     "PBP1204/Microcode/microcodeV2.6.svg",
     "README.md",
-    "PBP1204/Version Notes.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "PBP1204/Interrupts.md",
-    "PBP1204/Breakdown.md",
     "Example/Images.md"
   ]
 }
