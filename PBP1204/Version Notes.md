@@ -123,3 +123,10 @@ Aka:
 Run stuff -> Store stuff
 
 
+# Microcode 3.0
+![microcodeV3.0.svg](Microcode/microcodeV3.0.svg)
+Complete rework of the Architecture, now with proper Microcode, with way less hacks.
+
+# Microcode 3.1
+![microcodeV3.1.svg](Microcode/microcodeV3.1.svg)
+More features added
