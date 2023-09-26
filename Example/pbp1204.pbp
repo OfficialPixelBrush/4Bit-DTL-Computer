@@ -98,7 +98,7 @@
     }
 	
 	; LDD
-	ldd {r: register},{addr : u12}  => {
+	ldd {r: register},{addr : u12} => {
 		addr0 = addr & 0xF00;
 		addr0 = addr0/256;
 		
@@ -112,6 +112,21 @@
 	psh {r: register}  => 0x3 @ r
 	pop {r: register}  => 0x4 @ r
 	
+	; unconditional
+	jsr {addr: u12} =>
+	{
+		addr = addr-1;
+		addr0 = addr & 0xF00;
+		addr0 = addr0/256;
+		
+		addr1 = addr & 0x0F0;
+		addr1 = addr1/16;
+		
+		addr2 = addr & 0x00F;
+        0x5 @ 0x8 @ addr2`4 @ addr1`4 @ addr0`4
+	}
+	
+	; conditional
 	jsr {f: flag},{addr: u12} =>
 	{
 		addr = addr-1;
@@ -125,9 +140,29 @@
         0x5 @ f @ addr2`4 @ addr1`4 @ addr0`4
 	}
 	
-	ret => 0x6
+	; unconditional
+	ret => 0x6 @ 0x8
 	
+	; conditional
+	ret {f: flag} => {
+		0x6 @ f
+	}
 	
+	; unconditional
+	jmp {addr: u12} =>
+    {
+		addr = addr-1;
+		addr0 = addr & 0xF00;
+		addr0 = addr0/256;
+		
+		addr1 = addr & 0x0F0;
+		addr1 = addr1/16;
+		
+		addr2 = addr & 0x00F;
+        0x7 @ 0x8 @ addr2`4 @ addr1`4 @ addr0`4
+    }
+	
+	; conditional
 	jmp {f: flag},{addr: u12} =>
     {
 		addr = addr-1;
@@ -151,5 +186,4 @@
 	swp => 0xe
 	
 	clr {f: flag} => 0xf @ f
-	
 }
