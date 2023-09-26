@@ -1,19 +1,19 @@
 #include "microcode.pbpm"
-; --- LDD r4,addr
+; --- LD r12,imm12
 ; same intro for all
 RDB IR
 INC PC
 
+; Update Bitmask
 RDB BM
 INC PC
+; Read Databus to Buffers
 RDB LB
 INC PC
 RDB MB
 INC PC
 RDB HB
-
-RBR AB
-RDB LB
+; Update Contents of Pointed at Register
 RBR BMP
 
 ; Finish instruction

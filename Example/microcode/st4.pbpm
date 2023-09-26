@@ -3,17 +3,14 @@
 ; same intro for all
 RDB IR
 INC PC
-UAR PC
 
 RDB BM
+
 INC PC
-UAR PC
 RDB LB
 INC PC
-UAR PC
 RDB MB
 INC PC
-UAR PC
 RDB HB
 
 RBR AB
@@ -22,5 +19,4 @@ WDB LB
 
 ; Finish instruction
 INC PC
-UAR PC
 RRD IR

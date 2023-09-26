@@ -3,12 +3,10 @@
 ; same intro for all
 RDB IR
 INC PC
-UAR PC
 
 ; Update Bitmask
 RDB BM
 INC PC
-UAR PC
 ; Read Databus to Low Buffer
 RDB LB
 ; Update Contents of Pointed at Register
@@ -16,5 +14,4 @@ RBR BMP
 
 ; Finish instruction
 INC PC
-UAR PC
 RRD IR

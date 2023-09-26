@@ -41,7 +41,6 @@
 	nc => 5
     nb => 6
 	op => 7
-	bmp => 0xf
 }
 
 #ruledef
@@ -52,7 +51,7 @@
 	wbr {r: register} => r @ 0x3
 	rsf {f: flag    } => f @ 0x4
 	uar {r: register} => r @ 0x5
-	ctf {f: flag    } => r @ 0x6
+	ctf {r: register} => r @ 0x8
 	rrd {r: register} => r @ 0x7
 	
 	ana {r: register} => r @ 0x8

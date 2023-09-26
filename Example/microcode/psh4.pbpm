@@ -3,11 +3,10 @@
 ; same intro for all
 RDB IR
 INC PC
-UAR PC
 
 ; load register to be pushed
 RDB BM
-WBR BMP
+WBR BMP ; write to buffer
 
 ; output sp
 UAR SP
@@ -20,5 +19,4 @@ DEC SP
 
 ; Finish instruction
 INC PC
-UAR PC
 RRD IR
