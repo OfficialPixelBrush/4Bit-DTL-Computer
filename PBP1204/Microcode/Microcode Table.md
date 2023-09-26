@@ -72,14 +72,14 @@ Falling Edge: Used to let contents of Registers be updated
 | 0101  | 5   | Not Carry                    | NC    |
 | 0110  | 6   | Not Borrow                   | NB    |
 | 0111  | 7   | Not Even Parity (Odd Parity) | OP    |
-| 1000  | 8   |                              |       |
-| 1001  | 9   |                              |       |
-| 1010  | A   |                              |       |
-| 1011  | B   |                              |       |
-| 1100  | C   |                              |       |
-| 1101  | D   |                              |       |
-| 1110  | E   |                              |       |
-| 1111  | F   |                              |       |
+| 1000  | 8   | No Flag                      |       | 
+| 1001  | 9   | "                            |       |
+| 1010  | A   | "                            |       |
+| 1011  | B   | "                            |       |
+| 1100  | C   | "                            |       |
+| 1101  | D   | "                            |       |
+| 1110  | E   | "                            |       |
+| 1111  | F   | "                            |       |
 
 
 # Example Microcode for ADD
