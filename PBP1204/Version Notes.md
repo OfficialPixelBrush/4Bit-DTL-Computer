@@ -130,3 +130,10 @@ Complete rework of the Architecture, now with proper Microcode, with way less ha
 # Microcode 3.1
 ![microcodeV3.1.svg](Microcode/microcodeV3.1.svg)
 More features added
+
+# Microcode 3.2
+![microcodeV3.2.svg](Microcode/microcodeV3.2.svg)
+
+Full overhaul of the Address Counters, giving them way more features!
+Also some cautious printing maybe lol, would be fun to print messages out.
+There's still plenty to do, like refining the Main Registers, and making the rest of the ALU, but it's getting there!

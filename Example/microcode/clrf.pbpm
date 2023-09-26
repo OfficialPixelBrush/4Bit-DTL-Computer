@@ -4,8 +4,8 @@ RDB IR
 INC PC
 
 ; Reset Flag
-RDB BM
-RSF BMP
+RDB RS
+RSF RSP
 
 ; Finish instruction
 INC PC

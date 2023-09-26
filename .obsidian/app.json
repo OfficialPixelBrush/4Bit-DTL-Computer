@@ -4,5 +4,6 @@
   "readableLineLength": false,
   "showUnsupportedFiles": true,
   "newFileLocation": "current",
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "newLinkFormat": "relative"
 }

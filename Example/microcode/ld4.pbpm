@@ -4,13 +4,13 @@
 RDB IR
 INC PC
 
-; Update Bitmask
-RDB BM
+; Update Register Select
+RDB RS
 INC PC
 ; Read Databus to Low Buffer
 RDB LB
 ; Update Contents of Pointed at Register
-RBR BMP
+RBR RSP
 
 ; Finish instruction
 INC PC

@@ -5,10 +5,11 @@ LD A,0
 LD B,1
 
 fibo:
-ADD
 PSH A
+JMP C,halt
+ADD
 SWP
-JMP NC,fibo
+LD PC,fibo
 
 halt:
 LD PC,halt

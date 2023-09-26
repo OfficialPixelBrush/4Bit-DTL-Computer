@@ -5,8 +5,8 @@ RDB IR
 INC PC
 
 ; load register to be pushed
-RDB BM
-WBR BMP ; write to buffer
+RDB RS
+WBR RSP ; write to buffer
 
 ; output sp
 UAR SP
