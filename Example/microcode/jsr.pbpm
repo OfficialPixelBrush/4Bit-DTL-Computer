@@ -1,5 +1,5 @@
 #include "microcode.pbpm"
-; --- JMP f4,addr
+; --- JSR f4,addr
 RDB IR
 INC PC
 
@@ -14,9 +14,21 @@ RDB MB
 INC PC
 RDB HB
 
+; inc to point to next address
+INC PC
+
+; push next address to stack
+UAR SP
+WDB HPC
+DEC SP
+WDB MPC
+DEC SP
+WDB LPC
+DEC SP
+
 ; check the flag, load the new address if it's true
 CTF PC
+RBR PC
 
 ; finish the instruction up
-INC PC
 RRD IR

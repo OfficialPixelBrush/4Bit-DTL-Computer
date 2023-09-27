@@ -41,25 +41,6 @@
 	ld {r: register},{value : u12} =>
     {
         assert(r >= 0x8)
-        assert(r <= 0x8)
-		; only do this with PC!!!
-		value = value-1;
-		;
-		value0 = value & 0xF00;
-		value0 = value0/256;
-		
-		value1 = value & 0x0F0;
-		value1 = value1/16;
-		
-		value2 = value & 0x00F;
-        0x0 @ r @ value2`4 @ value1`4 @ value0`4
-    }
-	
-	; LD 12 SP
-	ld {r: register},{value : u12} =>
-    {
-        assert(r >= 0xc)
-		;
 		value0 = value & 0xF00;
 		value0 = value0/256;
 		

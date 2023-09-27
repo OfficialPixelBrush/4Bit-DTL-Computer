@@ -137,3 +137,8 @@ More features added
 Full overhaul of the Address Counters, giving them way more features!
 Also some cautious printing maybe lol, would be fun to print messages out.
 There's still plenty to do, like refining the Main Registers, and making the rest of the ALU, but it's getting there!
+
+# Microcode 3.3
+![microcodeV3.3.svg](Microcode/microcodeV3.3.svg)
+
+Slowly working towards working Subroutines and Stack Operations

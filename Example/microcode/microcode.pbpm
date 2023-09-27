@@ -52,7 +52,7 @@
 	wbr {r: register} => r @ 0x3
 	rsf {f: flag    } => f @ 0x4
 	uar {r: register} => r @ 0x5
-	ctf {r: register} => r @ 0x8
+	ctf {r: register} => r @ 0x6
 	rrd {r: register} => r @ 0x7
 	
 	ana {r: register} => r @ 0x8

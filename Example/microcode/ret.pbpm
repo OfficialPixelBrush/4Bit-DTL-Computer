@@ -1,23 +1,22 @@
 #include "microcode.pbpm"
-; --- JMP f4,addr
+; --- RET f4
 RDB IR
 INC PC
 
 ; read flag into tf
 RDB TF
+INC PC
 
 ; read address into buffers
-INC PC
+INC SP
 RDB LB
-INC PC
+INC SP
 RDB MB
-INC PC
+INC SP
 RDB HB
-INC PC
 
-; check the flag, load the new address if it's true
-CTF PC
+; check flag with sp
+CTF SP
 RBR PC
 
-; finish the instruction up
 RRD IR

@@ -1,0 +1,19 @@
+#include "microcode.pbpm"
+; --- POP r4
+; same intro for all
+RDB IR
+INC PC
+
+; load register to be pushed
+RDB RS
+
+; inc sp
+INC SP
+
+; load that shit
+RDB LB
+RBR RSP
+
+; Finish instruction
+INC PC
+RRD IR

@@ -3,8 +3,15 @@
 LD B,1
 LD A,0
 
-test:
-PSH A
+loop:
+JSR NC,count
+LD PC,loop
+
+count:
 ADD
-CLR C
-JMP test
+PSH A
+POP B
+RET NF
+
+halt:
+LD PC,halt
