@@ -1,0 +1,8 @@
+#include "pbp1204.pbp"
+
+LD B,1
+LD A,0
+
+test:
+ADD
+JMP test

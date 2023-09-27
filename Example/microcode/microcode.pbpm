@@ -41,6 +41,7 @@
 	nc => 5
     nb => 6
 	op => 7
+	nf => 8
 }
 
 #ruledef

@@ -1,0 +1,27 @@
+#include "microcode.pbpm"
+; --- PSH r12
+; same intro for all
+RDB IR
+INC PC
+
+RDB RS ; load register to the written out to pc
+
+UAR SP ; output SP
+WDB RSP ; write to SP location
+
+; middle nibble
+DEC RS
+DEC SP
+WDB RSP
+
+; low nibble
+DEC RS
+DEC SP
+WDB RSP
+
+; dec SP for next stack
+DEC SP
+
+; Finish instruction
+INC PC
+RRD IR

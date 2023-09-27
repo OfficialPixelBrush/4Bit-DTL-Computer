@@ -25,6 +25,7 @@
 	nc => 0x5
     nb => 0x6
 	op => 0x7
+	nf => 0x8
 }
 
 #ruledef
@@ -115,7 +116,6 @@
 	; unconditional
 	jsr {addr: u12} =>
 	{
-		addr = addr-1;
 		addr0 = addr & 0xF00;
 		addr0 = addr0/256;
 		
@@ -129,7 +129,6 @@
 	; conditional
 	jsr {f: flag},{addr: u12} =>
 	{
-		addr = addr-1;
 		addr0 = addr & 0xF00;
 		addr0 = addr0/256;
 		
@@ -151,7 +150,6 @@
 	; unconditional
 	jmp {addr: u12} =>
     {
-		addr = addr-1;
 		addr0 = addr & 0xF00;
 		addr0 = addr0/256;
 		
@@ -165,7 +163,6 @@
 	; conditional
 	jmp {f: flag},{addr: u12} =>
     {
-		addr = addr-1;
 		addr0 = addr & 0xF00;
 		addr0 = addr0/256;
 		
