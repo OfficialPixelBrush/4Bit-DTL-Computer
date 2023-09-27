@@ -4,5 +4,7 @@ LD B,1
 LD A,0
 
 test:
+PSH A
 ADD
+CLR C
 JMP test
