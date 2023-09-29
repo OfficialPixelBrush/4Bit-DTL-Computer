@@ -1,0 +1,71 @@
+#include "microcode.pbpm"
+
+; LD r4,imm4
+#addr 0x000
+#include "ld4.pbpm"
+
+; ST r4,addr 
+#addr 0x020
+#include "st4.pbpm"
+
+; LDD r4,addr
+#addr 0x040
+#include "ldd4.pbpm"
+
+; PSH r4
+#addr 0x060
+#include "psh4.pbpm"
+
+; POP r4
+#addr 0x080
+#include "pop4.pbpm"
+
+; JSR f4,addr
+#addr 0x0A0
+#include "jsr.pbpm"
+
+; RET f4
+#addr 0x0C0
+#include "ret.pbpm"
+
+; JMP f4,addr
+#addr 0x0E0
+
+; NAND
+#addr 0x100
+
+; NOR
+#addr 0x120
+
+; NOT
+#addr 0x140
+
+; ADD
+#addr 0x160
+#include "add.pbpm"
+
+; SL
+#addr 0x180
+
+; SR
+#addr 0x1A0
+
+; SWP
+#addr 0x1C0
+
+; CLR f4
+#addr 0x1E0
+#include "clr.pbpm"
+
+; Wide Instructions
+; LD r12,imm12
+#addr 0x200
+#include "ld12.pbpm"
+
+; ST r12,addr 
+#addr 0x220
+;#include "st12.pbpm"
+
+; LDD r4,addr
+#addr 0x240
+#include "ldd12.pbpm"

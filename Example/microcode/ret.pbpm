@@ -5,7 +5,6 @@ INC PC
 
 ; read flag into tf
 RDB TF
-INC PC
 
 ; read address into buffers
 INC SP
@@ -19,4 +18,5 @@ RDB HB
 CTF SP
 RBR PC
 
+INC PC
 RRD IR

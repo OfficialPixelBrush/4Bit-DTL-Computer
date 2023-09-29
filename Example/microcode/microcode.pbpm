@@ -26,9 +26,9 @@
 	hsp => 0xe
 	rsp => 0xf
 	
-	ab => 0x6
-	pc => 0x8
-	sp => 0xc
+	ab => 0x6 ; tf
+	pc => 0x8 ; lpc
+	sp => 0xc ; lsp
 }
 
 #ruledef flag
@@ -42,6 +42,7 @@
     nb => 6
 	op => 7
 	nf => 8
+	rsp => 0xf
 }
 
 #ruledef

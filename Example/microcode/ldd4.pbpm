@@ -4,7 +4,10 @@
 RDB IR
 INC PC
 
-RDB BM
+; read into RS
+RDB RS
+
+; read address in
 INC PC
 RDB LB
 INC PC
@@ -14,7 +17,7 @@ RDB HB
 
 RBR AB
 RDB LB
-RBR BMP
+RBR RSP
 
 ; Finish instruction
 INC PC

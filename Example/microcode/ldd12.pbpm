@@ -1,20 +1,28 @@
 #include "microcode.pbpm"
-; --- LD r12,imm12
+; --- LDD r12,addr
 ; same intro for all
 RDB IR
 INC PC
 
-; Update Register Select
+; read into RS
 RDB RS
+
+; read address in
 INC PC
-; Read Databus to Buffers
 RDB LB
 INC PC
 RDB MB
 INC PC
 RDB HB
-; Update Contents of Pointed at Register
+
+RBR AB
+RDB LB
+INC AB
+RDB MB
+INC AB
+RDB HB
 RBR RSP
 
 ; Finish instruction
+INC PC
 RRD IR

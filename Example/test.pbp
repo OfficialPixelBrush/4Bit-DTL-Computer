@@ -4,14 +4,16 @@ LD B,1
 LD A,0
 
 loop:
-JSR NC,count
+JSR count
 LD PC,loop
 
 count:
 ADD
 PSH A
 POP B
-RET NF
+RET NC
 
+LDD A,0xFFD
+LDD SP,0xFFD
 halt:
 LD PC,halt

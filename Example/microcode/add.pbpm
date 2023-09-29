@@ -1,0 +1,11 @@
+#include "microcode.pbpm"
+; same intro for all
+RDB IR
+
+; Add
+AAD LB
+RBR AR
+
+; Finish instruction
+INC PC
+RRD IR

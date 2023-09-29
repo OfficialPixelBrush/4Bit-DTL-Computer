@@ -141,4 +141,9 @@ There's still plenty to do, like refining the Main Registers, and making the res
 # Microcode 3.3
 ![microcodeV3.3.svg](Microcode/microcodeV3.3.svg)
 
-Slowly working towards working Subroutines and Stack Operations
+Slowly working towards working Subroutines and Stack Operations!
+
+# Microcode 3.4
+![microcodeV3.4.svg](Microcode/microcodeV3.4.svg)
+
+Added the LDD Instructions. Working to solve issues relating to Flag-triggered stack operations (to subtract 3 if a Flag wasn't triggered, for RET)
